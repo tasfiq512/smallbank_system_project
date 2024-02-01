@@ -12,3 +12,7 @@ function getTextElementValueById(elementId){
     const textElementValue = parseFloat(textElementValueString);
     return textElementValue;
 }
+function setTextElementValueById(elementId, newValue){
+    const textElement = document.getElementById(elementId);
+    textElement.innerText = newValue;
+}
